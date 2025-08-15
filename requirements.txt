@@ -3,3 +3,5 @@ yt-dlp
 spotdl
 pyyaml
 telegram
+flask
+replit
