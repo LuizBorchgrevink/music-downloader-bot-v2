@@ -3,7 +3,7 @@ modules = ["python-3.11"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["libyaml"]
+packages = ["cacert", "glibcLocales", "libxcrypt", "libyaml"]
 
 [unitTest]
 language = "python3"
@@ -18,3 +18,6 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 8080
 externalPort = 80
+
+[agent]
+expertMode = true
