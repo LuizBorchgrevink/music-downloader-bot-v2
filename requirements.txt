@@ -52,5 +52,4 @@ websockets==14.2
 wrapt==1.17.3
 yt-dlp==2025.6.30
 ytmusicapi==1.10.3
-flask
 telegram

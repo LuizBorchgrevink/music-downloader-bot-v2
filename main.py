@@ -762,22 +762,6 @@ async def descargar(update: Update, context: ContextTypes.DEFAULT_TYPE):
             logger.error(f"Error general en descarga: {e}")
             await query.message.reply_text(f"❌ Error inesperado:\n{str(e)[:200]}")
 
-# Crear la aplicación Flask
-app = Flask('')
-
-@app.route('/')
-def home():
-    return "Estoy vivo!"
-
-def run():
-    # Render proporciona el puerto a través de una variable de entorno
-    port = int(os.environ.get('PORT', 10000))
-    app.run(host='0.0.0.0', port=port)
-
-# Iniciar el servidor web en un hilo separado para no bloquear el bot
-def start_web_server():
-    t = Thread(target=run)
-    t.start()
 # ==================== CONFIGURACIÓN DEL BOT ====================
 
 def main():
