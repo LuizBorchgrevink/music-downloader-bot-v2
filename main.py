@@ -9,8 +9,6 @@ import logging
 import time
 import asyncio
 from datetime import datetime
-from flask import Flask
-from threading import Thread
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
